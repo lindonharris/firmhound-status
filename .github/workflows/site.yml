@@ -5,9 +5,18 @@ on:
   repository_dispatch:
     types: [site]
   workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   site:
-    name: Build status website
+    name: Build and deploy status website
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -15,6 +24,7 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GH_PAT || github.token }}
+
       - name: Build website
         uses: upptime/uptime-monitor@v1.41.0
         with:
@@ -22,3 +32,10 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GH_PAT || github.token }}
           SECRETS_CONTEXT: ${{ toJson(secrets) }}
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./__sapper__/export
+          cname: status.firmhound.com
