@@ -1,0 +1,54 @@
+# Firmhound Status Page Configuration
+# https://upptime.js.org/docs/configuration
+
+owner: lindonharris
+repo: firmhound-status
+
+# Monitors to check
+sites:
+  - name: API
+    url: https://api.firmhound.com/health
+    icon: https://firmhound.com/favicon.ico
+
+  - name: Developer Portal
+    url: https://developers.firmhound.com
+    icon: https://firmhound.com/favicon.ico
+
+  - name: Marketing Site
+    url: https://firmhound.com
+    icon: https://firmhound.com/favicon.ico
+
+# Status page settings
+status-website:
+  cname: status.firmhound.com
+  baseUrl: /
+  logoUrl: https://firmhound.com/logo.png
+  name: Firmhound Status
+  introTitle: "**Firmhound** is up and running"
+  introMessage: Real-time status for all Firmhound services. Subscribe to updates below.
+  navbar:
+    - title: Status
+      href: /
+    - title: API Docs
+      href: https://developers.firmhound.com
+    - title: Firmhound
+      href: https://firmhound.com
+
+# Incident management
+assignees:
+  - lindonharris
+
+# Customization
+i18n:
+  activeIncidents: Active Incidents
+  allSystemsOperational: All Systems Operational
+  incidentReport: Incident Report
+
+# Branding
+theme: light
+
+# Commit settings
+commitMessages:
+  statusChange: "$SITE_NAME is $STATUS"
+  incidentOpen: "Incident opened: $ISSUE_TITLE"
+  incidentClose: "Incident resolved: $ISSUE_TITLE"
