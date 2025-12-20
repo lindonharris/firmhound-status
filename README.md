@@ -4,11 +4,11 @@ This repository contains the status page for Firmhound services, powered by [Upp
 
 ## Monitored Services
 
-| Service | URL |
-|---------|-----|
-| API | https://api.firmhound.com/health |
+| Service          | URL                              |
+| ---------------- | -------------------------------- |
+| API              | https://api.firmhound.com/health |
 | Developer Portal | https://developers.firmhound.com |
-| Marketing Site | https://firmhound.com |
+| Marketing Site   | https://firmhound.com            |
 
 ## Status Page
 
