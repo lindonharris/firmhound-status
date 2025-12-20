@@ -37,5 +37,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./__sapper__/export
-          cname: status.firmhound.com
+          publish_dir: ./site/__sapper__/export
+          # cname: status.firmhound.com  # Uncomment after DNS is configured
