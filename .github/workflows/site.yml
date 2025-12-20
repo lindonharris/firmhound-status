@@ -38,4 +38,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site/__sapper__/export
-          # cname: status.firmhound.com  # Uncomment after DNS is configured
+          cname: status.firmhound.com
