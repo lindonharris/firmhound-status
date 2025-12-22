@@ -5,17 +5,19 @@
     "icon": "https://firmhound.com/favicon.ico",
     "slug": "api",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "uptime": "83.28%",
+    "uptimeDay": "70.25%",
+    "uptimeWeek": "83.28%",
+    "uptimeMonth": "83.28%",
+    "uptimeYear": "83.28%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2025-12-22": 428
+    }
   },
   {
     "name": "Developer Portal",
