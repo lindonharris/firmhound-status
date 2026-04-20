@@ -1,7 +1,7 @@
 url: https://api.firmhound.com/health
-status: up
-code: 200
-responseTime: 297
-lastUpdated: 2026-04-19T23:35:36.497Z
+status: down
+code: 530
+responseTime: 140
+lastUpdated: 2026-04-20T06:05:20.704Z
 startTime: 2025-12-20T19:06:40.880Z
 generator: Upptime <https://github.com/upptime/upptime>
